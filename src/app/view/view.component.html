@@ -1,0 +1,36 @@
+<div style = "justify-content: center; display: flex; margin-top: 20px;"> 
+  <mat-card *ngFor="let card Of level1" class = "cardSize" >
+    <img [src] = "card.imageUrl" class = "imageSize"/>
+    <div>{{card.name}}</div>
+    <div>({{card.relations.relationName}})</div>
+  </mat-card>
+  </div>
+<div class = "iconSize" *ngIf = "level1.length>0"><i class = " fa fa-arrow-down "  ></i></div>
+<div style = "justify-content: center; display: flex;"> 
+  <mat-card *ngFor="let card Of level2" class = "cardSize" >
+    <img [src] = "card.imageUrl" class = "imageSize"/>
+    <div>{{card.name}}</div>
+    <div>({{card.relations.relationName}})</div>
+      </mat-card>
+</div>
+<div class = "iconSize" *ngIf = "level2.length>0"><i class = " fa fa-arrow-down "  ></i></div>
+<div style = "justify-content: center; display: flex;"> 
+  <mat-card *ngFor="let card Of level3" class = "cardSize" >
+    <img [src] = "card.imageUrl" class = "imageSize"/>
+    <div>{{card.name}}</div>
+    <div>({{card.relations.relationName}})</div>
+  </mat-card>
+  </div>
+  <div class = "iconSize" *ngIf = "level3.length>0"><i class = " fa fa-arrow-down "  ></i></div>
+<div style = "justify-content: center; display: flex;"> 
+  <mat-card *ngFor="let card Of level4" class = "cardSize" >
+    <img [src] = "card.imageUrl" class = "imageSize" />
+    <div>{{card.name}}</div>
+    <div>({{card.relations.relationName}})</div>
+      </mat-card>
+</div>
+
+
+
+
+
